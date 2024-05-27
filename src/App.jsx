@@ -1,7 +1,8 @@
 import './App.css'
 import { ProductCardFC } from './components/ProductCardFC'
+import { ProductCardCC } from './components/ProductCardCC'
 
-function App() {
+function App(props) {
 
     const item = {
         brand: 'Tiger of Sweden',
@@ -11,6 +12,9 @@ function App() {
         price: 399,
         currency: '£'
     }
+
+    const { type } = props
+    const Component = type == 'CC' ? ProductCardFC: ProductCardFC
 
     return (
       <div className="container">
@@ -22,7 +26,7 @@ function App() {
 
       </div>
       <div className="window">
-        <ProductCardFC item={ item } />
+        <Component item = { item } />
       </div>
 
       </div>

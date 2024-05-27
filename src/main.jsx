@@ -9,6 +9,7 @@ const reactRoot = ReactDOM.createRoot(root);
 
 reactRoot.render(
     <React.StrictMode>
-        <App />
+        <App type = "FC"/>
+        <App type = "CC"/>
     </React.StrictMode>
 )
