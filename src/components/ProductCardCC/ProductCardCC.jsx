@@ -11,7 +11,7 @@ export class ProductCardCC extends Component {
         return (
         <>
         <div className={classes["main-content"]}>
-            <h2>{ brand }</h2>
+            <h2>{ brand } (CC) </h2>
             <h1>{ title }</h1>
             <h3>{ description }</h3>
             <div className={classes["description"]}>{ descriptionFull }</div>
