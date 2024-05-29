@@ -14,7 +14,8 @@ function App(props) {
     }
 
     const { type } = props
-    const Component = type === 'CC' ? ProductCardCC: ProductCardFC
+
+    const Component = type == 'CC' ? ProductCardCC : ProductCardFC;
 
     return (
       <div className="container">

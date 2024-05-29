@@ -1,5 +1,5 @@
 import classes from './productcardcc.module.css';
-import React, { Component } from 'react';
+import { Component } from 'react';
 
 export class ProductCardCC extends Component {
 
@@ -26,4 +26,4 @@ export class ProductCardCC extends Component {
         )
     }
 
-};
+}
